@@ -1,3 +1,3 @@
 [submodule "NUC"]
-  path=NUC/src
-  url=https://github.com/Road-Train/SolarBoat.git
+  path = NUC/src
+  url = https://github.com/Road-Train/SolarBoat.git
