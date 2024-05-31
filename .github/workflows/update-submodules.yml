@@ -1,0 +1,31 @@
+name: Update Submodules
+
+# Schedule the workflow to run periodically (e.g., daily)
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs at midnight UTC every day
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          submodules: recursive  # Ensure submodules are checked out
+
+      - name: Configure Git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+
+      - name: Update Submodules
+        run: |
+          git submodule update --remote
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "Automated submodule update"
+            git push
+          fi
