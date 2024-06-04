@@ -1,6 +1,10 @@
 # IT-Hub-Solarboat
 Parent Repository for all code related to the IT-Hub's Solarboat project.
 
+## Who&why.
+This repository was established to manage all of the code developed for the IT-hub's Solarboat.
+
+
 ## How to use:
 Code must not be commited to this repository directly. Instead, code will be commited to seperate repositories before being added as sub-modules to the parent repository.
 
