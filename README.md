@@ -2,7 +2,7 @@
 Parent Repository for all code related to the IT-Hub's Solarboat project.
 
 ## Who&why.
-This repository was established to manage all of the code developed for the IT-hub's Solarboat.
+This repository was established to manage all of the code developed for the IT-hub's Solarboat at the request of Ronald Eissens. Using github with submodules allows the parent repository to stay clean and code to remain seperated as much as it needs to be. It also allows for the pulling of individual submodules rather than pulling the entire codebase. At the same time, it allows for easy access to all of the resources from one central hub.
 
 
 ## How to use:
